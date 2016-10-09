@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>Alch Calc</title>
+    </head>
+    <body>
+        <h1>Des alchol check app</h1>
+        <p>The volume is millilitres (1000 in 1 litre)</p>
+        <p>
+
+          The formula to calculate roughly the new percentage is
+
+          volume 1 * p1 + volume 2 * p2 / volume 1 + volume 2
+
+        </p>
+        <form action="." method="POST">
+              <label>Volume (mL)</label></br>
+              <input type="text" name="v1"></br>
+              <label>Percentage Alc 1</label></br>
+              <input type="text" name="p1"></br>
+              </br>
+              <label>Volume (mL)</label></br>
+              <input type="text" name="v2"></br>
+              <label>Percentage Alc 2</label></br>
+              <input type="text" name="p2"></br>
+
+              <input type="submit" name="my-form" value="Calculate">
+          </form>
+
+          {% if result %}
+            <b>New percentage: {{ result }}%</b>
+          {% else %}
+          {% endif %}
+
+
+    </body>
+</html>
